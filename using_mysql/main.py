@@ -6,7 +6,7 @@ import os
 TABLE_NAME = 'customers'
 
 CURRENT_CURSOR = pymysql.cursors.SSDictCursor 
-#Usado quando temos uma grande quantidade de dados e presisamos de uma otimização
+#Usado quando temos uma grande quantidade de dados e precisamos de uma otimização
 #Não da para usar o cursor.scroll() por conta que só a linha atual é salva na mémoria
 
 dotenv.load_dotenv()
